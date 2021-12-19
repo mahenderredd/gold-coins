@@ -1,0 +1,31 @@
+﻿UI test
+
+Summary:
+	
+•	Create a web application that displays a list of gold products and product details.
+	
+•       For designs, refer to all-products.png and product-details.png.
+
+What to do:
+	
+•	Create a web application.
+	
+•	First, the web page should show the list of all gold products.
+	
+•	Either create a dummy API or use a JSON object to show the list of all gold products.
+	
+•	When you click on a product, show the details of that product.
+	
+•	Images are provided in the images folder. You can use dummy text if needed.
+
+Requirements:
+	
+•	Provide the github/bitbucket link for the application.
+	
+•	Add all the project related instructions in readme file(like how to run[execute command for] the project).
+	
+•	Your code should be easy to read and understand.
+	
+•	You should be able to verbally explain your design considerations.
+	
+•	You may use any frameworks you like.

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .men {
+            width: 25%;
+            float: left;
+            height: 1500px;
+        }
+        
+        .menu {
+            width: 10%;
+            float: left;
+            height: 1500px;
+        }
+        
+        .main {
+            width: 60%;
+            float: left;
+            height: 1500px;
+        }
+        
+        .me {
+            width: 5%;
+            float: left;
+            height: 1500px;
+        }
+        
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: whitesmoke;
+        }
+        
+        .topnav {
+            overflow: hidden;
+            height: 50px;
+        }
+        
+        .topnav a {
+            float: left;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        
+        .topnav p {
+            margin-left: 150px;
+            float: left;
+            color: goldenrod;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        
+        .topnav a:hover {
+            background-color: rgba(250, 231, 183, 0.63);
+            color: goldenrod;
+            border-radius: 20px;
+        }
+        
+        .buy {
+            width: 700px;
+            height: 40px;
+            background-color: white;
+        }
+        
+        p {
+            padding-top: 10px;
+        }
+        
+        .button {
+            margin-left: 450px;
+            background-color: green;
+            height: 24px;
+            border: none;
+            outline: 0;
+            color: white;
+        }
+        
+        .b {
+            float: left;
+            width: 33.33%;
+            text-align: center;
+            padding-top: 10px;
+        }
+        
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin: 30px;
+            text-align: center;
+            font-family: arial;
+            float: left;
+        }
+        
+        .card1 {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin: 20px;
+            margin-left: 30px;
+            text-align: center;
+            font-family: arial;
+            float: left;
+            height: 600px;
+        }
+        
+        .card2 {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 320px;
+            margin-top: -620px;
+            text-align: center;
+            font-family: arial;
+            float: left;
+            height: 600px;
+        }
+        
+        .card1 button {
+            border: none;
+            outline: 0;
+            padding: 12px;
+            color: white;
+            background-color: green;
+            text-align: center;
+            cursor: pointer;
+            font-size: 18px;
+            margin: 30px;
+            border-radius: 20px;
+        }
+        
+        .card2 button {
+            border: none;
+            outline: 0;
+            padding: 12px;
+            color: white;
+            background-color: green;
+            text-align: center;
+            cursor: pointer;
+            font-size: 18px;
+            margin: 30px;
+            border-radius: 20px;
+        }
+        
+        .price {
+            color: grey;
+            font-size: 22px;
+        }
+        
+        .card button {
+            border: none;
+            outline: 0;
+            padding: 12px;
+            color: white;
+            background-color: green;
+            text-align: center;
+            cursor: pointer;
+            font-size: 18px;
+            margin: 40px;
+            border-radius: 20px;
+        }
+        
+        .card button:hover {
+            opacity: 0.7;
+        }
+        
+        .faq {
+            background-color: white;
+            margin-top: 25px;
+            height: 30px;
+            text-align: center;
+            color: yellowgreen;
+        }
+        
+        .card-header {
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="topnav">
+        <p>
+            <b>
+					SAFEG
+					<b style="color: gold">O</b> LD
+            </b>
+        </p>
+        <a href="#home">Home</a>
+        <a href="#buy">Buy</a>
+        <a href="#sell">Sell</a>
+        <a href="#Gift">Gift</a>
+        <a href="#buycoins">Buy Coins</a>
+        <a href="#sip">SIP</a>
+        <a href="#Jewellery">Jewellery</a>
+        <a href="#faq">FAQ</a>
+    </div>
+
+    <div class="menu"></div>
+
+    <div class="main">
+        <div>
+            <h5 style="color: rgba(8, 122, 27, 0.726)">Gold Delivery</h5>
+        </div>
+        <div class="buy">
+            <p>
+                <small style="margin-left: 3px">Your Locker Balance</small>
+                <a href="#"><button class="button">Buy Gold</button></a>
+            </p>
+        </div>
+        <div>
+            <div class="b">
+                <img src="images/1gm_back.jpeg" style="width: 40%"/>
+                <p>Pure Gold Quality Guaranteed</p>
+            </div>
+            <div class="b">
+                <img src="images/1gm_back.jpeg" style="width: 40%" />
+                <p>100% Secure with Delivery Insurance</p>
+            </div>
+            <div class="b">
+                <img src="images/1gm_back.jpeg" style="width: 40%" />
+                <p>Best Prices in the market</p>
+            </div>
+        </div>
+        <div>
+            <p>All Products</p>
+            <div class="card">
+                <img src="images/1gm_front.jpeg" alt="Gold" style="width: 100%" />
+                <h1>1 Gram Coin(99.99%)</h1>
+                <p class="price">Minting charges Rs 475.00</p>
+                    <a href="1gram.html"><button>View Details</button></a>
+            </div>
+
+            <div class="card">
+                <img src="images/chain_front.jpeg" alt="Gold" style="width: 100%" />
+                <h1>18 kt Gold Chain(99.99%)</h1>
+                <p class="price">Minting charges Rs 1.10</p>
+                <a href="1gram.html"><button>View Details</button></a>
+            </div>
+
+            <div class="card">
+                <img src="images/5gm_front.jpeg" alt="Gold" style="width: 100%" />
+                <h1>5 Gram Coin(99.99%)</h1>
+                <p class="price">Minting charges Rs 500.00</p>
+                <a href="1gram.html"><button>View Details</button></a>
+            </div>
+
+            <div class="card">
+                <img src="images/5gm_bar_9999_front.jpeg" alt="Gold" style="width: 100%" />
+                <h1>
+                    5 Gram
+                    <br /> Bar
+                </h1>
+                <br />
+                <br />
+                <p class="price">Minting charges Rs 350.00</p>
+               <a href="1gram.html"> <button>View Details</button></a>
+            </div>
+
+            <div class="card">
+                <img src="images/5gm_coin_999_front.jpeg" alt="Gold" style="width: 100%" />
+                <h1>5 Gram Coin(99.99%)</h1>
+                <p class="price">Minting charges Rs 350.00</p>
+               <a href="1gram.html"> <button>View Details</button></a>
+            </div>
+
+            <div class="card">
+                <img src="images/20gm_bar_9999_front.jpeg" alt="Gold" style="width: 100%" />
+                <h3>18 kt Gold Chain(99.99%)</h3>
+                <p class="price">Minting charges Rs 1.10</p>
+                <a href="1gram.html"><button>View Details</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="men">
+        <div class="faq">
+            <b>Frequently Asked Questions</b>
+            <div class="card-header" id="infraOne">
+                <a href="#collapseOne" class="collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+						How does the gold get delivered to me?
+					</a>
+            </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="infraOne" data-parent="#accordion">
+                <div class="card-body">
+                    <ul>
+                        <li>
+                            You can request for all or part of your gold holding, from 0.5 gm (and multiples thereof).
+                        </li>
+                        <li>
+                            You can select the denomination of the gold you wish to withdraw from the available options of coins.
+                        </li>
+                        <li>
+                            Each coin will have different making charges, based on the weight and design of the coin.
+                        </li>
+                        <li>
+                            You must confirm the transaction by paying the additional making and delivery charge.
+                        </li>
+                        <li>
+                            Your gold product will be delivered at your notified address by a logistics provider arranged by the Company, and you will receive a confirmation on your registered mobile number.
+                        </li>
+                        <li>
+                            You will receive a dispatch confirmation and the waybill number of the courier company which will allow you track your package online.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-header" id="infraTwo">
+                <a href="#collapseTwo" class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						Is it possible to store my withdraw gold coins in safe
+						custody and have them delivered later?
+					</a>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="infraTwo" data-parent="#accordion">
+                <div class="card-body">
+                    Once you place a delivery request, you have to accept the delivery made to you. It cannot be made at a later date.
+                </div>
+            </div>
+            <div class="card-header" id="infraThree">
+                <a href="#collapseThree" class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						Can I change my delivery address?
+					</a>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="infraThree" data-parent="#accordion">
+                <div class="card-body">
+                    Yes, you can opt to have your gold delivered at an address other than that mentioned at the time of registration. However, this may be subject to verification of address change, as per the norms established by the distributor.
+                </div>
+            </div>
+            <div class="card-header" id="infrafour">
+                <a href="#collapsefour" class="collapsed" data-toggle="collapse" data-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+						Where is delivery of gold available?
+					</a>
+            </div>
+            <div id="collapsefour" class="collapse" aria-labelledby="infrafour" data-parent="#accordion">
+                <div class="card-body">
+                    SafeGold delivers across India, through partnerships with secure logistics providers. We maintain a list of serviceable pin codes, and prior to making any purchase you will be informed whether you pin code is serviceable for delivery. Depending on the
+                    Distributor platform however, you can still choose to have your gold delivered to an address that is different from the one entered at the time of registration. This may be subject to verification by our Partners.
+                </div>
+            </div>
+            <div class="card-header" id="infrafive">
+                <a href="#collapsefive" class="collapsed" data-toggle="collapse" data-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+						Are there any changes for delivery of gold?
+					</a>
+            </div>
+            <div id="collapsefive" class="collapse" aria-labelledby="infrafive" data-parent="#accordion">
+                <div class="card-body">
+                    Yes, you are required to pay a minting charge at the time of requesting for delivery. We deliver your gold to you in the form of BIS hallmarked coins, in tamper evident packaging, using secure logistics providers. The charge covers the cost of minting,
+                    packaging, insurance, assay certification and delivery to you.
+                </div>
+            </div>
+            <div class="card-header" id="infrasix">
+                <a href="#collapsesix" class="collapsed" data-toggle="collapse" data-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
+						How does SafeGold ensure secured delivery of gold?
+					</a>
+            </div>
+            <div id="collapsesix" class="collapse" aria-labelledby="infrasix" data-parent="#accordion">
+                <div class="card-body">
+                    The delivery of your gold coins and bars is fully insured. We've partnered with the best delivery partners in the country to ensure your gold is in safe hands right from the locker to your home. To ensure the quality of the gold coin and bars delivered
+                    to you - we have our products independently assessed and assay certified to ensure zero negative weight tolerance and promised purity.
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="me"></div>
+    </div>
+</body>
+
+</html>
